@@ -11,7 +11,7 @@
     <h1>Redirect</h1>
     <a href="https://filipchalupa.cz">https://filipchalupa.cz</a>
     <script>
-        document.querySelector('meta[http-equiv="refresh"]').getAttribute('content').split('URL=')[1]
+        location.href = document.querySelector('meta[http-equiv="refresh"]').getAttribute('content').split('URL=')[1]
     </script>
 </body>
 </html>
