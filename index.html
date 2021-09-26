@@ -1,23 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirect</title>
-    <meta http-equiv="refresh" content="time; URL=https://filipchalupa.cz" />
-    <style>
-        body {
-            text-align: center;
-            font-family: sans-serif;
-        }
-    </style>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ln.filipchalupa.cz</title>
+	<style>
+		body {
+			text-align: center;
+			font-family: sans-serif;
+			min-height: 100vh;
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background-color: #F6FDFF;
+			margin: 0;
+			padding: 1em;
+		}
+
+		header {
+			font-size: 1.5em;
+		}
+
+		iframe {
+			display: block;
+			width: 100%;
+			flex-grow: 1;
+		}
+	</style>
 </head>
+
 <body>
-    <h1>Redirect</h1>
-    <a href="https://filipchalupa.cz">https://filipchalupa.cz</a>
-    <script>
-        location.href = document.querySelector('meta[http-equiv="refresh"]').getAttribute('content').split('URL=')[1]
-    </script>
+	<header>
+		<h1>ln.filipchalupa.cz</h1>
+		Feed the fish or continue to <a href="https://filipchalupa.cz">https://filipchalupa.cz</a>.
+	</header>
+	<iframe src="https://lightning-aquarium.loca.lt/" frameborder="0"></iframe>
 </body>
+
 </html>
