@@ -7,7 +7,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ln.filipchalupa.cz</title>
 	<link rel="icon" type="image/png" href="https://filipchalupa.cz/assets/profile.jpg" />
+	<meta name="color-scheme" content="light dark">
 	<style>
+		:root {
+			--background-color: #f6fdff;
+		}
+		@media (prefers-color-scheme: dark) {
+			:root {
+				--background-color: #1a1a1b;
+			}
+		}
 		body {
 			text-align: center;
 			font-family: sans-serif;
@@ -16,7 +25,7 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			background-color: #F6FDFF;
+			background-color: var(--background-color);
 			margin: 0;
 			padding: 1em;
 		}
